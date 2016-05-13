@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<root>
+<list>
+
+<item>
+<name>LeaveInsMode with EISUU(all)</name>
+<identifier>private.app_terminal_esc_with_eisuu</identifier>
+<autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+<autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+</item>
+
+<item>
+<name>EISUU -> COMMAND_L</name>
+<identifier>private.app_eisuu_to_command_l</identifier>
+<autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+</item>
+
+<item>
+<name>KANA -> COMMAND_R</name>
+<identifier>private.app_kana_to_command_r</identifier>
+<autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::COMMAND_R, KeyCode::JIS_KANA</autogen>
+</item>
+
+
+
+
+<!-- Option + hoge -->
+<item>
+	<name>Option_L U -> Delete</name>
+	<identifier>private.app_option_l_u_to_delete</identifier>
+	<autogen>--KeyToKey-- KeyCode::U, ModifierFlag::OPTION_L, KeyCode::DELETE</autogen>
+</item>
+
+<item>
+	<name>Option_L I -> Cursor_Right + Delete</name>
+	<identifier>private.app_option_l_i_to_delete</identifier>
+	<autogen>--KeyToKey-- KeyCode::I, ModifierFlag::OPTION_L, KeyCode::CURSOR_RIGHT, KeyCode::DELETE</autogen>
+</item>
+
+<item>
+	<name>Option_L Space -> Return</name>
+	<identifier>private.app_option_l_o_to_return</identifier>
+	<autogen>--KeyToKey-- KeyCode::SPACE, ModifierFlag::OPTION_L, KeyCode::RETURN</autogen>
+</item>
+
+<item>
+	<name>Option_L O -> Return</name>
+	<identifier>private.app_option_l_space_to_return</identifier>
+	<autogen>--KeyToKey-- KeyCode::O, ModifierFlag::OPTION_L, KeyCode::RETURN</autogen>
+</item>
+
+<item>
+	<name>Option_L HJKL -> CURSOR</name>
+	<identifier>private.app_option_l_hjkl_to_cursor</identifier>
+	<autogen>--KeyToKey-- KeyCode::H, ModifierFlag::OPTION_L, | ModifierFlag::NONE, KeyCode::CURSOR_LEFT</autogen>
+	<autogen>--KeyToKey-- KeyCode::J, ModifierFlag::OPTION_L, | ModifierFlag::NONE, KeyCode::CURSOR_DOWN</autogen>
+	<autogen>--KeyToKey-- KeyCode::K, ModifierFlag::OPTION_L, | ModifierFlag::NONE, KeyCode::CURSOR_UP</autogen>
+	<autogen>--KeyToKey-- KeyCode::L, ModifierFlag::OPTION_L, | ModifierFlag::NONE, KeyCode::CURSOR_RIGHT</autogen>
+</item>
+
+
+<!-- Command + hoge -->
+<item>
+	<name>Command_L U -> Delete</name>
+	<identifier>private.app_command_l_u_to_delete</identifier>
+	<autogen>--KeyToKey-- KeyCode::U, ModifierFlag::COMMAND_L, | ModifierFlag::NONE, KeyCode::DELETE</autogen>
+</item>
+
+<item>
+	<name>Command_L I -> Cursor_Right + Delete</name>
+	<identifier>private.app_command_l_i_to_delete</identifier>
+	<autogen>--KeyToKey-- KeyCode::I, ModifierFlag::COMMAND_L, | ModifierFlag::NONE, KeyCode::CURSOR_RIGHT, KeyCode::DELETE</autogen>
+</item>
+
+<item>
+	<name>Command_L Space -> Return</name>
+	<identifier>private.app_command_l_space_to_return</identifier>
+	<autogen>--KeyToKey-- KeyCode::SPACE, ModifierFlag::COMMAND_L, | ModifierFlag::NONE, KeyCode::RETURN</autogen>
+</item>
+
+<item>
+	<name>Command_L O -> Return</name>
+	<identifier>private.app_command_l_o_to_return</identifier>
+	<autogen>--KeyToKey-- KeyCode::O, ModifierFlag::COMMAND_L, | ModifierFlag::NONE, KeyCode::RETURN</autogen>
+</item>
+
+<item>
+	<name>Command_L HJKL -> CURSOR</name>
+	<identifier>private.app_command_l_hjkl_to_cursor</identifier>
+	<autogen>--KeyToKey-- KeyCode::H, ModifierFlag::COMMAND_L, | ModifierFlag::NONE, KeyCode::CURSOR_LEFT</autogen>
+	<autogen>--KeyToKey-- KeyCode::J, ModifierFlag::COMMAND_L, | ModifierFlag::NONE, KeyCode::CURSOR_DOWN</autogen>
+	<autogen>--KeyToKey-- KeyCode::K, ModifierFlag::COMMAND_L, | ModifierFlag::NONE, KeyCode::CURSOR_UP</autogen>
+	<autogen>--KeyToKey-- KeyCode::L, ModifierFlag::COMMAND_L, | ModifierFlag::NONE, KeyCode::CURSOR_RIGHT</autogen>
+</item>
+
+</list>
+</root>
+
